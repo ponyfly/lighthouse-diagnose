@@ -1,17 +1,13 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>{{ activeName }}</div>
+  <router-view></router-view>
 </template>
 
-<script>
+<script setup>
 import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+import {ref} from "vue";
+let activeName = ref('')
 </script>
 
 <style>
