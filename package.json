@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "preview": "http-server ./dist -p 3002 -c31536000 -g",
+    "preview": "http-server ./dist -p 3002 -c31536000 -g -S -C cert.pem",
     "simplehttp2server": "simplehttp2server -config ./server/simplehttp2server.config.json"
   },
   "dependencies": {
